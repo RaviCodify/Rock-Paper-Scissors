@@ -34,7 +34,7 @@ form.addEventListener("submit", function (e) {
   setTimeout(() => {
     form.style.display = "block";
     versus.style.display = "none";
-  }, 3000);
+  }, 1500);
   console.log(userScore + " : " + compScore);
 });
 
@@ -74,7 +74,7 @@ function addPic(userSide, computerSide) {
     setTimeout(() => {
       user.removeChild(userImg);
       computer.removeChild(computerImg);
-    }, 3000);
+    }, 1500);
   }
 }
 
@@ -102,5 +102,5 @@ function compare(user, computer) {
   }
   setTimeout(() => {
     resultBox.style.display = "none";
-  }, 3000);
+  }, 1500);
 }
