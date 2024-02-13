@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 600px;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.start-menu{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    /* display: none; */
+}
+.start-menu h1{
+    font-size: 60px;
+    padding: 0 40px;
+}
+.start-menu h2{
+    margin-top: 25%;
+    font-size: 40px;
+    padding: 10px 20px;
+    margin-inline: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: tomato;
+}
+form{
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+#rock, #paper, #scissors{
+    width: 350px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin:10px 7vw;
+    border-radius: 50vw;
+    padding: 2vw;
+    border: 1px solid black;
+}
+
+
+#rock{
+    background-color: chocolate;
+}
+#paper{
+    background-color: bisque;
+}
+#scissors{
+    background-color: silver;
+}
+
+label{
+    font-size: 5vw;
+}
+
+.bottom-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 3vw;
+}
+button{
+    width: 130px;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: coral;
+}
+.versus{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+.versus .user, .versus .computer{
+    border: 1px solid black;
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+.versus h3{
+    position: absolute;
+    margin-left: 20px;
+    font-size: 40px;
+}
+.versus img{
+    height: 100%;
+    width: 100%;
+}
+.result{
+    display: none;
+    font-size: 2vw;
+}
+
+@media (max-width:510px) {
+    #rock, #paper, #scissors{
+        width: 60vw;
+        height: 15vw;
+        margin:2vw 7vw;
+    }
+    form label{
+        font-size: 10vw;
+    }   
+    .bottom-row{
+        padding-top: 100px;
+    }
+    .start-menu h1{
+        font-size: 10vw;
+    }
+    .start-menu h2{
+        font-size: 5vw;
+    }
+    .versus h3{
+        font-size: 4vw;
+    }
+}
